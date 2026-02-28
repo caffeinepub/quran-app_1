@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Amiri:ital,wght@0,400;0,700;1,400&family=Noto+Nastaliq+Urdu:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Islamic Green & Gold Palette - Light Mode */
+    --background: 0.97 0.008 140;
+    --foreground: 0.18 0.02 150;
+    --card: 1 0 0;
+    --card-foreground: 0.18 0.02 150;
+    --popover: 1 0 0;
+    --popover-foreground: 0.18 0.02 150;
+    --primary: 0.38 0.12 155;
+    --primary-foreground: 0.98 0 0;
+    --secondary: 0.93 0.015 140;
+    --secondary-foreground: 0.25 0.04 150;
+    --muted: 0.93 0.01 140;
+    --muted-foreground: 0.52 0.02 150;
+    --accent: 0.93 0.015 140;
+    --accent-foreground: 0.25 0.04 150;
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 0.985 0 0;
+    --border: 0.88 0.02 140;
+    --input: 0.88 0.02 140;
+    --ring: 0.38 0.12 155;
+
+    /* Custom semantic tokens */
+    --header-bg: 0.28 0.09 155;
+    --page-bg: 0.96 0.01 140;
+    --gold-300: 0.82 0.12 85;
+    --gold-400: 0.75 0.14 80;
+    --gold-500: 0.68 0.16 75;
+    --gold-600: 0.60 0.15 72;
+    --gold-700: 0.52 0.13 70;
+    --gold-800: 0.44 0.11 68;
+    --islamic-green-200: 0.88 0.08 155;
+    --islamic-green-300: 0.78 0.10 155;
+    --islamic-green-400: 0.65 0.12 155;
+    --islamic-green-500: 0.52 0.14 155;
+    --islamic-green-600: 0.42 0.13 155;
+    --islamic-green-700: 0.34 0.11 155;
+    --islamic-green-800: 0.26 0.09 155;
+    --arabic-text: 0.15 0.03 150;
+    --urdu-text: 0.28 0.04 150;
+    --english-text: 0.42 0.02 150;
+    --continue-card: 0.98 0.01 140;
+    --card-hover: 0.97 0.015 140;
+    --card-bookmarked: 0.97 0.02 80;
+    --surah-banner: 0.95 0.015 140;
+    --search-bg: 0.99 0.005 140;
+
+    --radius: 0.75rem;
+
+    --chart-1: 0.646 0.222 41.116;
+    --chart-2: 0.6 0.118 184.704;
+    --chart-3: 0.398 0.07 227.392;
+    --chart-4: 0.828 0.189 84.429;
+    --chart-5: 0.769 0.188 70.08;
+    --sidebar: 0.985 0 0;
+    --sidebar-foreground: 0.145 0 0;
+    --sidebar-primary: 0.205 0 0;
+    --sidebar-primary-foreground: 0.985 0 0;
+    --sidebar-accent: 0.97 0 0;
+    --sidebar-accent-foreground: 0.205 0 0;
+    --sidebar-border: 0.922 0 0;
+    --sidebar-ring: 0.708 0 0;
+  }
+
+  .dark {
+    --background: 0.14 0.02 155;
+    --foreground: 0.93 0.01 140;
+    --card: 0.19 0.025 155;
+    --card-foreground: 0.93 0.01 140;
+    --popover: 0.22 0.03 155;
+    --popover-foreground: 0.93 0.01 140;
+    --primary: 0.65 0.12 155;
+    --primary-foreground: 0.12 0.02 155;
+    --secondary: 0.24 0.03 155;
+    --secondary-foreground: 0.93 0.01 140;
+    --muted: 0.22 0.025 155;
+    --muted-foreground: 0.58 0.04 150;
+    --accent: 0.26 0.035 155;
+    --accent-foreground: 0.93 0.01 140;
+    --destructive: 0.704 0.191 22.216;
+    --destructive-foreground: 0.205 0 0;
+    --border: 1 0 0 / 12%;
+    --input: 1 0 0 / 15%;
+    --ring: 0.52 0.12 155;
+
+    /* Custom semantic tokens - Dark */
+    --header-bg: 0.12 0.025 155;
+    --page-bg: 0.14 0.02 155;
+    --gold-300: 0.82 0.12 85;
+    --gold-400: 0.75 0.14 80;
+    --gold-500: 0.72 0.16 78;
+    --gold-600: 0.64 0.15 75;
+    --gold-700: 0.56 0.13 72;
+    --gold-800: 0.48 0.11 70;
+    --islamic-green-200: 0.78 0.08 155;
+    --islamic-green-300: 0.68 0.10 155;
+    --islamic-green-400: 0.60 0.12 155;
+    --islamic-green-500: 0.55 0.14 155;
+    --islamic-green-600: 0.46 0.13 155;
+    --islamic-green-700: 0.38 0.11 155;
+    --islamic-green-800: 0.30 0.09 155;
+    --arabic-text: 0.92 0.02 140;
+    --urdu-text: 0.82 0.03 145;
+    --english-text: 0.68 0.02 145;
+    --continue-card: 0.19 0.025 155;
+    --card-hover: 0.22 0.03 155;
+    --card-bookmarked: 0.22 0.04 80;
+    --surah-banner: 0.17 0.025 155;
+    --search-bg: 0.20 0.025 155;
+
+    --chart-1: 0.488 0.243 264.376;
+    --chart-2: 0.696 0.17 162.48;
+    --chart-3: 0.769 0.188 70.08;
+    --chart-4: 0.627 0.265 303.9;
+    --chart-5: 0.645 0.246 16.439;
+    --sidebar: 0.205 0 0;
+    --sidebar-foreground: 0.985 0 0;
+    --sidebar-primary: 0.488 0.243 264.376;
+    --sidebar-primary-foreground: 0.985 0 0;
+    --sidebar-accent: 0.269 0 0;
+    --sidebar-accent-foreground: 0.985 0 0;
+    --sidebar-border: 1 0 0 / 10%;
+    --sidebar-ring: 0.439 0 0;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .font-arabic {
+    font-family: 'Amiri Quran', 'Amiri', serif;
+  }
+
+  .font-urdu {
+    font-family: 'Noto Nastaliq Urdu', 'Amiri', serif;
+  }
+
+  .dir-rtl {
+    direction: rtl;
+  }
+
+  .pt-safe {
+    padding-top: env(safe-area-inset-top, 0px);
+  }
+}

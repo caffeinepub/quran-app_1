@@ -1,0 +1,42 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-create-a-ramadan-prayer-timings-screen-that-displays-the-five-daily-prayer-times-suhoor-fajr-dhuhr-asr-maghrib-iftar-isha-for-each-day-of-ramadan-the-screen-should-show-a-static-pre-defined-schedule-with-all-30-days-of-ramadan-listed-each-day-entry-shows-the-day-number-date-reference-and-the-corresponding-prayer-times-the-layout-must-follow-the-existing-islamic-green-and-gold-theme-with-arabic-prayer-names-displayed-alongside-english-names",
+      "featureTitle": "Create a Ramadan Prayer Timings screen that displays the five daily prayer times (Suhoor/Fajr, Dhuhr, Asr, Maghrib/Iftar, Isha) for each day of Ramadan. The screen should show a static, pre-defined schedule with all 30 days of Ramadan listed. Each day entry shows the day number, date reference, and the corresponding prayer times. The layout must follow the existing Islamic green and gold theme with Arabic prayer names displayed alongside English names.",
+      "files": [
+        "frontend/src/pages/PrayerTimings.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-9"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-a-route-for-the-ramadan-prayer-timings-page-in-the-tanstack-router-configuration-in-app-tsx-and-add-a-navigation-card-on-the-home-screen-home-tsx-linking-to-the-new-prayer-timings-screen",
+      "featureTitle": "Add a route for the Ramadan Prayer Timings page in the TanStack Router configuration in App.tsx, and add a navigation card on the Home screen (Home.tsx) linking to the new prayer timings screen.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/pages/Home.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-10"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

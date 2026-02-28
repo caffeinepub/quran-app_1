@@ -1,0 +1,22 @@
+{
+  "backend/main.mo": "Motoko actor defining the Quran app backend with types and CRUD operations for Surahs, Ayahs, Juz mappings, and per-principal bookmarks stored in mutable lists and a map.",
+  "feature_evidence.json": "Feature evidence report linking two implemented features—the Ramadan Prayer Timings screen and its route/navigation card—to their respective source files and test IDs.",
+  "frontend-file-summaries.txt": "JSON document providing one-sentence descriptions of each frontend source file, serving as a human-readable index of the frontend codebase.",
+  "frontend/index.css": "Base Tailwind CSS file defining shadcn-compatible CSS custom properties for light and dark color themes using OKLCH values.",
+  "frontend/index.html": "HTML entry point for the Quran PWA with mobile-optimized viewport, Islamic theme color, and a root div for the React app.",
+  "frontend/src/App.tsx": "Root React component that configures TanStack Router with all app routes (home, surahs, reader, juz, settings, tasbeeh, prayer-timings) wrapped in a next-themes ThemeProvider.",
+  "frontend/src/hooks/useActor.ts": "React Query hook that creates and caches an authenticated or anonymous ICP backend actor, invalidating dependent queries whenever the identity changes.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Context provider and hook for Internet Identity authentication, exposing login/clear functions, identity state, and login status derived from DFINITY's AuthClient.",
+  "frontend/src/hooks/useQueries.ts": "Collection of React Query hooks wrapping all backend actor calls (getSurahs, getSurah, getAyahs, getJuzIndex, getBookmark, saveBookmark) with caching and cache invalidation.",
+  "frontend/src/index.css": "Global stylesheet importing Google Fonts (Amiri Quran, Noto Nastaliq Urdu, Inter) and defining an Islamic green-and-gold OKLCH color system with semantic tokens for both light and dark modes.",
+  "frontend/src/main.tsx": "Entry point that renders the React app wrapped in QueryClientProvider and InternetIdentityProvider.",
+  "frontend/src/pages/Home.tsx": "Home page displaying a header with app branding, a continue-reading bookmark card, and navigation cards for Surah List, Juz Index, Tasbeeh, Prayer Timings, and Settings.",
+  "frontend/src/pages/JuzIndex.tsx": "Page listing all 30 Juz with their names and starting surah/ayah, fetched via queries, with navigation to the reader on selection.",
+  "frontend/src/pages/PrayerTimings.tsx": "Page displaying static Ramadan prayer times (Suhoor, Fajr, Dhuhr, Asr, Maghrib, Isha) for all 30 days of Ramadan in a table-style layout.",
+  "frontend/src/pages/Settings.tsx": "Settings page allowing users to toggle between light and dark themes using next-themes, with a visual theme preview and an about section.",
+  "frontend/src/pages/SurahList.tsx": "Page listing all 114 Surahs with search filtering by name or number, navigating to the reader when a surah is selected.",
+  "frontend/src/pages/SurahReader.tsx": "React page component that displays a Quran surah with its ayahs, supporting bookmarking, smooth scroll-to-bookmark on load, and previous/next surah navigation.",
+  "frontend/src/pages/TasbeehCounter.tsx": "React page component implementing a digital tasbeeh (dhikr) counter with a circular progress ring, tap-to-count interaction, cycle tracking, and localStorage persistence.",
+  "frontend/tailwind.config.js": "Tailwind CSS configuration extending the theme with custom Islamic-green and gold color palettes, Arabic/Urdu font families, semantic page tokens, and standard shadcn-style design tokens using OKLCH colors.",
+  "project_state.json": "JSON file tracking the overall project state, including version, feature list, architectural notes, and known issues for a Quran mobile web application."
+}

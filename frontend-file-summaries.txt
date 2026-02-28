@@ -1,0 +1,14 @@
+{
+  "frontend/src/App.tsx": "Main app component with TanStack Router setup including all routes (home, surahs, reader, juz, settings, tasbeeh, and the new prayer-timings route) wrapped in ThemeProvider.",
+  "frontend/src/hooks/useQueries.ts": "React Query hooks for all backend operations including getSurahs, getSurah, getAyahs, getJuzIndex, getBookmark, and saveBookmark with proper cache invalidation.",
+  "frontend/src/pages/Home.tsx": "Home screen with Islamic header, Continue Reading bookmark card, and a 2-column navigation grid now including a Ramadan Prayer Timings card alongside Surah List, Juz Index, Tasbeeh, and Settings.",
+  "frontend/src/pages/SurahList.tsx": "Surah list screen with sticky search bar filtering all 114 surahs by name or number, displaying surah number badge, Arabic name, English name, revelation type, and ayah count.",
+  "frontend/src/pages/SurahReader.tsx": "Surah reader screen displaying ayahs with large Arabic Uthmani text, Urdu translation, and English translation per block, with bookmark functionality, smooth scroll to bookmarked ayah, and prev/next surah navigation.",
+  "frontend/src/pages/JuzIndex.tsx": "Juz index screen listing all 30 juz entries with juz number, traditional name, and starting surah/ayah, navigating to the corresponding surah reader on tap.",
+  "frontend/src/pages/Settings.tsx": "Settings screen with dark/light mode toggle using next-themes, theme preview buttons, and app info section.",
+  "frontend/src/pages/TasbeehCounter.tsx": "Tasbeeh counter screen with animated circular progress ring, tap-to-increment button, cycle tracking, tasbeeh label selector (SubhanAllah/Alhamdulillah/Allahu Akbar), and localStorage persistence.",
+  "frontend/src/index.css": "Global styles with Islamic green and gold OKLCH color system for both light and dark modes, Google Fonts imports for Amiri Quran, Noto Nastaliq Urdu, and Inter, plus RTL and safe-area utilities.",
+  "frontend/tailwind.config.js": "Extended Tailwind config with Islamic green and gold color palettes, Arabic/Urdu/Inter font families, semantic page tokens, and custom card shadow utilities.",
+  "frontend/index.html": "HTML entry point with mobile-optimized viewport meta tags, PWA-ready apple-mobile-web-app settings, and Islamic theme color.",
+  "frontend/src/pages/PrayerTimings.tsx": "New Ramadan Prayer Timings page displaying static prayer times (Suhoor, Fajr, Dhuhr, Asr, Maghrib/Iftar, Isha) for all 30 days of Ramadan, with Arabic and English names, a legend card, per-day cards highlighting Suhoor/Iftar times, and the Islamic green and gold theme."
+}

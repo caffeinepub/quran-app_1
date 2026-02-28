@@ -1,0 +1,62 @@
+{
+  "kind": "build_request",
+  "title": "Add Ramadan Prayer Timings Screen",
+  "projectName": "Quran App",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-9",
+      "text": "Create a Ramadan Prayer Timings screen that displays the five daily prayer times (Suhoor/Fajr, Dhuhr, Asr, Maghrib/Iftar, Isha) for each day of Ramadan. The screen should show a static, pre-defined schedule with all 30 days of Ramadan listed. Each day entry shows the day number, date reference, and the corresponding prayer times. The layout must follow the existing Islamic green and gold theme with Arabic prayer names displayed alongside English names.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-6"
+        ],
+        "quotes": [
+          "prayer timings for Ramadan"
+        ]
+      },
+      "acceptanceCriteria": [
+        "A dedicated Ramadan Prayer Timings page/screen is accessible from the Home screen navigation cards",
+        "The screen lists prayer times (Suhoor, Fajr, Dhuhr, Asr, Maghrib/Iftar, Isha) for all 30 days of Ramadan",
+        "Each prayer entry displays both the Arabic name and English name",
+        "The screen uses the existing Islamic green and gold visual theme consistent with the rest of the app",
+        "The Ramadan Prayer Timings navigation card or link is added to the Home screen",
+        "The screen is mobile-first with smooth scrolling"
+      ]
+    },
+    {
+      "id": "REQ-10",
+      "text": "Add a route for the Ramadan Prayer Timings page in the TanStack Router configuration in App.tsx, and add a navigation card on the Home screen (Home.tsx) linking to the new prayer timings screen.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-6"
+        ],
+        "quotes": [
+          "prayer timings for Ramadan"
+        ]
+      },
+      "acceptanceCriteria": [
+        "A new route (e.g., /prayer-timings) is registered in App.tsx",
+        "The Home screen displays a navigation card for Ramadan Prayer Timings alongside the existing Surah List, Juz Index, Tasbeeh, and Settings cards",
+        "Tapping the card navigates to the Ramadan Prayer Timings screen"
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not modify any files under frontend/src/hooks/ or frontend/src/components/ui",
+    "Prayer times data must be static/hardcoded on the frontend — no backend changes required",
+    "Maintain the existing Islamic green and gold theme defined in frontend/src/index.css and tailwind.config.js"
+  ],
+  "nonGoals": [
+    "Real-time or location-based dynamic prayer time calculation",
+    "Integration with any external prayer time API",
+    "Push notifications for prayer times",
+    "Backend storage of prayer timings"
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

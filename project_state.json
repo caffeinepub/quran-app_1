@@ -1,0 +1,160 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 5,
+  "summary": "A clean and modern Quran mobile application with full Quran in Arabic (Uthmani script), Urdu and English translations, Surah list with search, Juz index, dark/light mode, bookmarks, Islamic green and gold theme, and optional audio playback. Extra features include daily ayah notification, tasbeeh counter, tafseer section, share ayah, and last read auto-save.",
+  "architectural_notes": [
+    "App should be lightweight, fast loading, and offline capable",
+    "Arabic text larger, Urdu medium, English slightly smaller with clear spacing between ayahs",
+    "Soft green gradient background with smooth scroll"
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-create-a-home-screen-that-displays-a-continue-reading-button-showing-last-bookmarked-surah-ayah-if-available-and-navigation-cards-buttons-for-surah-list-juz-list-and-settings",
+      "title": "Create a Home screen that displays a 'Continue Reading' button (showing last bookmarked surah/ayah if available), and navigation cards/buttons for: Surah List, Juz List, and Settings.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-surah-list-screen-with-a-search-bar-that-filters-surahs-by-arabic-name-english-name-or-surah-number-each-list-item-shows-the-surah-number-arabic-name-english-name-and-number-of-ayahs-tapping-a-surah-navigates-to-the-surah-reader-screen",
+      "title": "Create a Surah List screen with a search bar that filters surahs by Arabic name, English name, or surah number. Each list item shows the surah number, Arabic name, English name, and number of ayahs. Tapping a surah navigates to the Surah Reader screen.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-surah-reader-screen-that-displays-ayahs-sequentially-each-ayah-block-shows-the-ayah-number-badge-arabic-text-uthmani-script-largest-font-urdu-translation-medium-font-below-arabic-and-english-translation-smaller-font-below-urdu-clear-visual-spacing-separates-each-ayah-a-bookmark-icon-on-each-ayah-allows-saving-that-ayah-as-the-last-read-position",
+      "title": "Create a Surah Reader screen that displays ayahs sequentially. Each ayah block shows: the ayah number badge, Arabic text (Uthmani script, largest font), Urdu translation (medium font, below Arabic), and English translation (smaller font, below Urdu). Clear visual spacing separates each ayah. A bookmark icon on each ayah allows saving that ayah as the last read position.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-juz-index-screen-listing-all-30-juz-entries-each-entry-shows-the-juz-number-and-starting-surah-ayah-tapping-a-juz-navigates-to-the-appropriate-position-in-the-surah-reader",
+      "title": "Create a Juz Index screen listing all 30 juz entries. Each entry shows the juz number and starting surah/ayah. Tapping a juz navigates to the appropriate position in the Surah Reader.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-settings-screen-with-a-toggle-for-dark-mode-and-light-mode-the-preference-should-persist-across-sessions-using-localstorage",
+      "title": "Implement a Settings screen with a toggle for Dark Mode and Light Mode. The preference should persist across sessions using localStorage.",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-a-consistent-islamic-green-and-gold-visual-theme-across-the-entire-app-use-a-soft-green-gradient-as-the-primary-background-gold-accents-for-highlights-borders-and-icons-arabic-text-should-use-an-elegant-uthmani-style-web-font-e-g-kfgqpc-uthmani-script-hafs-or-amiri-quran-via-google-fonts-the-layout-must-be-mobile-first-with-smooth-scrolling-minimal-ui-chrome-and-generous-spacing-between-ayahs",
+      "title": "Apply a consistent Islamic green and gold visual theme across the entire app. Use a soft green gradient as the primary background, gold accents for highlights, borders, and icons. Arabic text should use an elegant Uthmani-style web font (e.g., KFGQPC Uthmani Script Hafs or Amiri Quran via Google Fonts). The layout must be mobile-first with smooth scrolling, minimal UI chrome, and generous spacing between ayahs.",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-tasbeeh-counter-screen-accessible-from-the-home-screen-or-settings-the-counter-increments-on-tap-displays-the-current-count-prominently-and-includes-a-reset-button-the-count-should-persist-in-localstorage",
+      "title": "Implement a Tasbeeh Counter screen accessible from the Home screen or Settings. The counter increments on tap, displays the current count prominently, and includes a reset button. The count should persist in localStorage.",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-ramadan-prayer-timings-screen-that-displays-the-five-daily-prayer-times-suhoor-fajr-dhuhr-asr-maghrib-iftar-isha-for-each-day-of-ramadan-the-screen-should-show-a-static-pre-defined-schedule-with-all-30-days-of-ramadan-listed-each-day-entry-shows-the-day-number-date-reference-and-the-corresponding-prayer-times-the-layout-must-follow-the-existing-islamic-green-and-gold-theme-with-arabic-prayer-names-displayed-alongside-english-names",
+      "title": "Create a Ramadan Prayer Timings screen that displays the five daily prayer times (Suhoor/Fajr, Dhuhr, Asr, Maghrib/Iftar, Isha) for each day of Ramadan. The screen should show a static, pre-defined schedule with all 30 days of Ramadan listed. Each day entry shows the day number, date reference, and the corresponding prayer times. The layout must follow the existing Islamic green and gold theme with Arabic prayer names displayed alongside English names.",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-route-for-the-ramadan-prayer-timings-page-in-the-tanstack-router-configuration-in-app-tsx-and-add-a-navigation-card-on-the-home-screen-home-tsx-linking-to-the-new-prayer-timings-screen",
+      "title": "Add a route for the Ramadan Prayer Timings page in the TanStack Router configuration in App.tsx, and add a navigation card on the Home screen (Home.tsx) linking to the new prayer timings screen.",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Surah list with search bar",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Full Quran in Arabic (Uthmani script) with Urdu and English translations per ayah",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Juz index",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Dark mode and light mode toggle",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Bookmark feature to save last read ayah",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "Islamic green and gold theme with minimal elegant UI",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-7",
+      "summary": "Home screen with Continue Reading, Surah List, Juz List, and Settings",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-8",
+      "summary": "Simple audio play button for each ayah",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-9",
+      "summary": "Daily Ayah notification, Tasbeeh counter, Tafseer section, Share ayah feature",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-10",
+      "summary": "Build a Motoko backend that stores and serves the full Quran data: surah metadata (number, Arabic name, English name, number of ayahs, revelation type), ayah data (surah number, ayah number, Arabic text in Uthmani script, Urdu translation, English translation), and juz index mapping (juz number, starting surah, starting ayah). Expose query endpoints: getSurahs(), getSurah(surahNumber: Nat), getAyahs(surahNumber: Nat), getJuzIndex(), and update endpoints: saveBookmark(surahNumber: Nat, ayahNumber: Nat), getBookmark().",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-11",
+      "summary": "Prayer timings for Ramadan",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Quran App",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}
